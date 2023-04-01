@@ -1,0 +1,1 @@
+obj_player_run_up()

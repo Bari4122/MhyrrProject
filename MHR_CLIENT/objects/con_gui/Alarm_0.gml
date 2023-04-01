@@ -1,0 +1,8 @@
+
+buffer_seek(con_client.client_buffer,buffer_seek_start,0);
+buffer_write(con_client.client_buffer,buffer_u8,network.second_update);
+buffer_write(con_client.client_buffer,buffer_string,room_get_name(room));
+buffer_write(con_client.client_buffer,buffer_string,global.username);
+network_send_packet(con_client.client,con_client.client_buffer,buffer_tell(con_client.client_buffer));
+
+alarm[0] = room_speed;

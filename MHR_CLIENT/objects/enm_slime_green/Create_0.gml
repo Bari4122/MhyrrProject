@@ -1,0 +1,15 @@
+depth = -y;
+image_speed = 0;
+sprite_index = spr_blank;
+hpc = 1;
+hpm = 1;
+sprite_x = x;
+sprite_y = y;
+sprite_frame = 1;
+sprite_id = spr_slime_green_idle;
+alarm[0] = room_speed;
+alarm[1] = room_speed;
+aggro_target = "";
+aggro_timer = 3;
+attack_respawn = 0;
+attack_range = 1;
